@@ -14,14 +14,18 @@ min-width:890px;
 h1 {
     font-family:"Chewy", Georgia, san-serif;
     font-size: 50px;
+    padding:10px;
 
+}
+
+nav{
+    padding:10px;
 }
 
 header, 
 footer {
     background-color:rgba(102,187,145,0.46);
     border: 3px solid rgba(0,0,0,1);
-    padding:10px;
 }
 
 main{
