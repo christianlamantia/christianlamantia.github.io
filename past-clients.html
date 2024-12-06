@@ -5,6 +5,7 @@
         <title>Christian's Portfolio</title>
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="css/wallop.css">
+        <link rel="stylesheet" href="css/wallop--fade.css">
     </head>
     <body>
     <nav>
@@ -16,21 +17,24 @@
         </ul>
     </nav>
 <main>
-        <section id="past-clients">
+    <section id="past-clients">
 <h1>Past Clients</h1>
-<p>I am incredibly grateful to have had the opportunity to work with some amazing brands over the course of my academic and professional career </p>
+<div class="Wallop Wallop--fade">
 <div class="Wallop">
 <div class="Wallop-list">
-    <div class="Wallop-item"><img src="images/beach.jpg" alt="Two women doing yoga on the beach with an instructor"></div>
+    <div class="Wallop-item"><img src="images/oysters.jpg"alt="A table-spread of mexican food"></div>
     <div class="Wallop-item"><img src="images/bathrobe.jpg" alt="A woman enjoying a luxurious bathroom"></div>
-     <div class="Wallop-item"><img src="images/oysters.jpg"alt="A table-spread of mexican food"></div>
-     <div class="Wallop-item"><img src="images/mayamigas.jpg" alt="A pink cocktail with a flower garnish"></div>
+    <div class="Wallop-item"><img src="images/mayamigas.jpg" alt="A pink cocktail with a flower garnish"></div>
+</div>
 </div>
 <button class="Wallop-buttonPrevious">Previous</button>
 <button class="Wallop-buttonNext">Next</button>
 </div>
-<p>I created content for Carma Connected, a Miami-based <abbr title="Public Relations Agency">PR Agency</abbr>, and the New Perspectives Theatre Company, a <abbr title="New York City">NYC</abbr> non-profit organization. </p>
-<p>My past experience has allowed me to carve out a niche as an expert in entertainment and hospitality spaces.</p>
+
+<div id="carma-blurb">
+<p>I am incredibly grateful to have had the opportunity to work with some amazing brands over the course of my academic and professional career.</p>
+<p>Primarily as an employee of Carma Connected, a Miami-based <abbr title="Public Relations Agency">PR Agency</abbr>, and the New Perspectives Theatre Company, a <abbr title="New York City">NYC</abbr> non-profit organization, I've created content for incredible accounts in the hospitality and entertainment spaces. </p>
+</div>
 
 <article id="testimonial-1">
     <blockquote cite="https://newperspectivestheatre.org">
@@ -45,6 +49,5 @@
     var wallopEl = document.querySelector('.Wallop');
     var slider = new Wallop(wallopEl);
   </script>
-
 </body>
 </html>

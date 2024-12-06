@@ -3,7 +3,7 @@
 
 body {
 padding:20px;
-font-family: "Quicksand", Georgia, sans-serif;
+font-family: "Quicksand", "Roboto Mono",Georgia, 'Times New Roman', Times, serif sans-serif;
 font-weight: 500;
 font-size: 15px;
 margin: auto;
@@ -162,4 +162,17 @@ footer p{
 
 #img-3{
     grid-area:img-3;
+}
+
+button{
+    display:inline-block;
+    font-family:"Quicksand", "Roboto Mono",Georgia, 'Times New Roman', Times, serif sans-serif;
+    margin-right:20px;
+    z-index:1;
+    padding: 15px 32px;
+    font-size:18px;
+    border-radius:10px;
+    background-color:rgba(228, 255, 252, 0.616);
+    transition-duration: 0.2s;
+    border-color:rgb(0, 0, 0);
 }
