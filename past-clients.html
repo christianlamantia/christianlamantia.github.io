@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Christian's Portfolio</title>
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/jcarousel.basic.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/wallop.css">
     </head>
     <body>
     <nav>
@@ -19,21 +19,18 @@
         <section id="past-clients">
 <h1>Past Clients</h1>
 <p>I am incredibly grateful to have had the opportunity to work with some amazing brands over the course of my academic and professional career </p>
-<div class="jcarousel">
-    <ul>
-        <li><img src="images/beach.jpg" alt="Two women doing yoga on the beach with an instructor"></li>
-        <li><img src="images/bathrobe.jpg" alt="A woman enjoying a luxurious bathroom"></li>
-        <li><img src="images/oysters.jpg"alt="A table-spread of mexican food"></li>
-        <li><img src="images/mayamigas.jpg" alt="A pink cocktail with a flower garnish"></li>
-    </ul>
+<div class="Wallop">
+<div class="Wallop-list">
+    <div class="Wallop-item"><img src="images/beach.jpg" alt="Two women doing yoga on the beach with an instructor"></div>
+    <div class="Wallop-item"><img src="images/bathrobe.jpg" alt="A woman enjoying a luxurious bathroom"></div>
+     <div class="Wallop-item"><img src="images/oysters.jpg"alt="A table-spread of mexican food"></div>
+     <div class="Wallop-item"><img src="images/mayamigas.jpg" alt="A pink cocktail with a flower garnish"></div>
 </div>
-<figure>
-    <img src="images/beach.jpg" alt="yoga on the beach at sunrise">
+<button class="Wallop-buttonPrevious">Previous</button>
+<button class="Wallop-buttonNext">Next</button>
+</div>
 <p>I created content for Carma Connected, a Miami-based <abbr title="Public Relations Agency">PR Agency</abbr>, and the New Perspectives Theatre Company, a <abbr title="New York City">NYC</abbr> non-profit organization. </p>
 <p>My past experience has allowed me to carve out a niche as an expert in entertainment and hospitality spaces.</p>
-<figure>
-    <img src="images/bathrobe.jpg" alt="woman in luxurious bathroom">
-</figure>
 
 <article id="testimonial-1">
     <blockquote cite="https://newperspectivestheatre.org">
@@ -43,14 +40,11 @@
 </article>
 </section>
     </main>
-<script src="js/jcarousel.basic.js"></script>
- <script src="js/jquery-3.7.1.min.js"></script>
- <script>
-$(function() {
-    $('.jcarousel').jcarousel({
-       list: '.jcarousel-list'
-    });
-});
- </script>
+<script src="js/Wallop.min.js"></script>
+<script>
+    var wallopEl = document.querySelector('.Wallop');
+    var slider = new Wallop(wallopEl);
+  </script>
+
 </body>
 </html>
