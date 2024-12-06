@@ -18,7 +18,8 @@ border-radius:10px;
 }
 
 header h1{
-    color:rgb(40, 42, 45);
+    color:rgb(239, 246, 255);
+    font-size:45px;
     background-color: rgba(114,165,181,0.89);
     border:1px solid;
     border-color:rgba(0,0,0,0);
@@ -317,8 +318,9 @@ button{
     background-color:rgba(228, 255, 252, 0.616);
     color:rgb(0, 0, 0);
     border-color:rgb(0, 0, 0);
-    max-width:900px;
+    width:943px;
     margin:0px auto;
     padding:10px;
 }
 
+/*remember to add flex-box so when window gets smaller it's still readable*/
