@@ -8,7 +8,6 @@ font-family: "Quicksand", Georgia, sans-serif;
 font-weight: 500;
 font-size: 15px;
 margin: auto;
-min-width:890px;
 background-color: rgba(114,165,181,0.84);
 width:1000px;
 }
@@ -19,6 +18,8 @@ nav {
     background-color: rgba(14,52,64,0.84);
     margin: 0 auto;
     padding: 20px;
+    border-radius:10px;
+    border: 2px;
 }
 
 nav ul{
@@ -29,19 +30,33 @@ nav ul{
 nav li{
     display:inline-block;
     margin-right:20px;
-    background-color:rgba(89,48,20,0.46);
-    color: rgba(255,255,255,0.46);
     padding: 15px 32px;
-    text-decoration:none;
     font-size:18px;
+    border-radius:10px;
+    background-color:rgba(228, 255, 252, 0.46);
+    color:rgba(0,0,0,0);
+    transition-duration: 0.2s;
+    border-color:rgb(0, 0, 0);
 }
 
-a, 
-a:link{
-    color: rgba(0,0,0,0);
+nav li:hover{
+    background-color:rgba(255, 255, 255, 0.616);
 }
-
 
 h1,h2{
     font-family:"roboto-mono", georgia, sans-serif;
+}
+
+a:link{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+a:hover{
+    color:rgb(125, 241, 250);
+}
+
+a:visited{
+    color:rgb(12, 87, 93);
 }
