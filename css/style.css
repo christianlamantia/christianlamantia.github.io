@@ -231,7 +231,7 @@ button{
     height:250px;
     width:294px;
     margin:0px auto;
-    padding-bottom:10px;
+    padding-bottom:30px;
 }
 
 #testimonial-1{
@@ -307,6 +307,7 @@ button{
     grid-row:2/3;
     grid-column:-2/-1;
     padding:10px;
+    padding-bottom:30px;
     margin:0px auto;
 }
 
