@@ -7,7 +7,7 @@ font-family: "Montserrat", "Roboto Mono",Georgia, 'Times New Roman', Times, seri
 font-weight: 500;
 font-size: 18px;
 margin: 0px auto;
-max-width:1000px;
+width:1000px;
 background-image:url("../images/background-image.jpg");
 background-attachment:fixed;
 background-size:cover;
@@ -107,15 +107,19 @@ a:link{
 }
 
 a,
+a:visited{
+    color:rgb(255, 255, 255);
+}
+
+a,
 a:hover{
     color:rgb(0, 238, 255);
 }
 
-a,
-a:visited{
-    color:rgb(12, 87, 93);
+a, 
+a:focus{
+    color:rgb(135, 175, 177);
 }
-
 a,
 a:active{
     color:rgba(31, 102, 177, 0.732);
@@ -147,7 +151,7 @@ footer a{
 #bio{
     grid-column:2;
     grid-row:1;
-    max-width:500px;
+    max-width:600px;
 }
 
 footer p{
@@ -156,23 +160,6 @@ footer p{
     font-weight: 500;
     font-size: 15px;
     color:rgba(167, 167, 167, 0.813);
-}
-
-.jcarousel {
-    position: relative;
-    overflow: hidden;
-}
-
-.jcarousel ul {
-    width: 10000em;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.jcarousel li {
-    float: left;
 }
 
 #figure-1{
@@ -225,12 +212,18 @@ button{
     padding-left:20px;
 }
 
+#button{
+    margin-left:10px;
+    margin-bottom:10px;
+}
+
 #carma-blurb{
     grid-column:2;
     grid-row:1;
     height:250px;
-    width:294px;
+    width:350px;
     margin:0px auto;
+    margin-top:-30px;
     padding-bottom:30px;
 }
 
@@ -261,7 +254,6 @@ button{
     background-color:rgba(228, 255, 252, 0.616);
     color:rgb(0, 0, 0);
     border-color:rgb(0, 0, 0);
-    padding-top:10px;
     margin:0px auto;
     max-width:650px;
 }
@@ -299,8 +291,10 @@ button{
 #objectives{
     grid-row:1;
     grid-column:2;
-    padding:10px;
-    margin:0px auto;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    margin-top:-15px;
 }
 
 #results{
